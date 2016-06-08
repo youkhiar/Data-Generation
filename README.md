@@ -8,7 +8,7 @@ The format, length, and possible values of the data are customizable according t
 1. mvn clean package
 
 2. command line:
-	gilda <path-json-input> <path-directory-output> numberOfGeneratedFiles linesPerFile
+	gilda path-json-input path-directory-output numberOfGeneratedFiles linesPerFile
 
 For example, assuming we're in target directory: 
 	./gilda /home/myuser/Desktop/input-example.json /tmp 25 1000000 
