@@ -60,7 +60,7 @@
 				<artifactId>really-executable-jar-maven-plugin</artifactId>
 				<version>1.1.0</version>
 				<configuration>
-					<programFile>genData</programFile>
+					<programFile>datioGen</programFile>
 				</configuration>
 
 				<executions>
