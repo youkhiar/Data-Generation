@@ -1,5 +1,5 @@
 # Overview
-DatioGen is a project to generate random data for test purposes, specially for big data.
+Gilda is a project to generate random data for test purposes, specially for big data.
 The format, length, and possible values of the data are customizable according to json passed as a parameter.
 
 
@@ -8,10 +8,10 @@ The format, length, and possible values of the data are customizable according t
 1. mvn clean package
 
 2. command line:
-	datioGen <path-json-input> <path-directory-output> numberOfGeneratedFiles linesPerFile
+	gilda <path-json-input> <path-directory-output> numberOfGeneratedFiles linesPerFile
 
 For example, assuming we're in target directory: 
-	./datioGen /home/myuser/Desktop/input-example.json /tmp 25 1000000 
+	./gilda /home/myuser/Desktop/input-example.json /tmp 25 1000000 
 
 	That would generate 25 outputs files of random data, with 1000000 lines each. 
 
