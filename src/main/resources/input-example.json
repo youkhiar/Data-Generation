@@ -1,0 +1,8 @@
+[
+{"name":"conceptCode", "type":"alphabetic", "length":"12", "values":["001", "002", "003", "004"]},
+{"name":"contractCode", "type":"alphanumeric","length":"20"},
+{"name":"price", "type":"decimal","length":""},
+{"name":"checked", "type":"boolean","length":""},
+{"name":"telephone", "type":"numeric","length":"", "values":["002121988", "+565656544", "666886868", "915450021"]}
+]
+
