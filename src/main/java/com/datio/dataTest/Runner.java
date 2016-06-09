@@ -35,27 +35,31 @@ public class Runner {
    private static void printDuration(long startTime, String pathOutput) {
 	   
 	   long stopTime = System.currentTimeMillis();
-	   long elapsedTime = stopTime - startTime;
+	   long elapsedTime = stopTime - startTime;	   	  
+	   String duration = printTime(elapsedTime);
 	   
-	   String duration;
-	   
-	   if (elapsedTime > 60000) { // bigger than a min
-		   int min = (int) (elapsedTime / (1000 * 60)) % 60;
-		   duration = min +"min " + (elapsedTime / 1000) % 60 + "s";
-	   }
-	   else if (elapsedTime > 1000) // bigger than a sec
-		   duration = elapsedTime/1000 + "s";		   
-	   else
-		   duration = elapsedTime + "ms";
-		   
 	   System.out.println("..Completed in "+duration);
 	   System.out.println("..Check generated files on: "+pathOutput);
+	}
+
+
+	private static String printTime(long elapsedTime) {
+		String duration;
+		if (elapsedTime > 60000) { // bigger than a min
+			   int min = (int) (elapsedTime / (1000 * 60)) % 60;
+			   duration = min +"min " + (elapsedTime / 1000) % 60 + "s";
+		   }
+		   else if (elapsedTime > 1000) // bigger than a sec
+			   duration = elapsedTime/1000 + "s";		   
+		   else
+			   duration = elapsedTime + "ms";
+		return duration;
 	}   
    
    
    private static void generateData(String inputFilePath, String outputDirectory, int numFiles, int linesPerFile) {
 
-	   List<Field> list = DataIO.readFields(inputFilePath);
+	    List<Field> list = DataIO.readFields(inputFilePath);
 		List<String> itemsLine = new LinkedList<>();		
 		BufferedWriter writer;
 		
