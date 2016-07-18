@@ -13,7 +13,7 @@ The format, length, and possible values of the data are customizable according t
 For example, assuming we're in target directory: 
 	./gilda /home/myuser/Desktop/input-example.json /tmp 25 1000000 
 
-	That would generate 25 outputs files of random data, with 1000000 lines each. 
+That would generate 25 outputs files of random data, with 1000000 lines each. 
 
 3. The input Json defines format, size.. of the fields that compose each line. We use the following format: 
 
@@ -21,7 +21,7 @@ For example, assuming we're in target directory:
 	{"name":"NAME_OF_FIELD_2", "type":"TYPE_OF_FIELD_2", "length":"LENGTH_OF_FIELD_2", "values":["VALUE_4", "VALUE_5", "VALUE_9"..]},
 	{"name":"NAME_OF_FIELD_3", "type":"TYPE_OF_FIELD_3", "length":"LENGTH_OF_FIELD_3"}]
 
-	WHERE:
+WHERE:
 	- TYPE_OF_FIELD = {"alphabetic", "alphanumeric", "decimal", "boolean", "numeric"}
 	- VALUE_X = These are the values that randomly would take the field. They are optional. If we don't put them, the generation would be based on the type of field and the length.
 
@@ -31,7 +31,7 @@ For example, assuming we're in target directory:
 	{"name":"price", "type":"decimal","length":""},
 	{"name":"checked", "type":"boolean","length":""}]
 
-	WE GET THESE KIND OF LINES:
+WE GET THESE KIND OF LINES:
 	004;fjFi7xr8Aq0F8sGPZjFr;622299,96;false
 	003;8GINBg80RMUBCwyPHMwe;30895,25;false
 	001;vLsX3U0lDQRdmFfjr5D0;591158,97;true
